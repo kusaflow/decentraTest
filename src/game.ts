@@ -5,6 +5,7 @@ import { Door } from "./door"
 import { Sound } from "./sound"
 import * as ui from "@dcl/ui-scene-utils"
 import {abi} from "abi";
+import * as val from "validator";
 
 
 // Config
@@ -77,9 +78,9 @@ async function checkTokens() {
   let ca : string
   ca = "0x495f947276749ce646f68ac8c248420045cb7b5e"
 
-
-  let balance = await crypto.currency.balance(ca, userAddress)
-  log("BALANCE: ", balance)
+  //let res = val.validate(ua, ca);
+  //let balance = await crypto.currency.balance(ca, userAddress)
+  //log("BALANCE: ", res)
 
   //if (Number(balance) > 0) {
   if(true){
